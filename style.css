@@ -451,11 +451,11 @@ color: #e6add5;
 }
 
 @media screen and (max-width: 576px) {
-  .map{
-    padding-bottom: 4%;
-  }
- #location{
-   display: inline-block;
+ #location .map{
+  display: inline-block;
+  justify-content:center ;
+  align-items: center;
+  text-align: center;
  }
  .icon a i{
   font-size: 140%;
@@ -480,12 +480,11 @@ color: #e6add5;
   .map{
     padding-bottom: 4%;
   }
- #location{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
- }
+#location .map{    display: inline-block;
+    justify-content:center ;
+    align-items: center;
+   }
+
  .icon a i{
   font-size: 160%;
 }
