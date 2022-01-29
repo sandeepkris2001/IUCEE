@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICEM 2022</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiped-events@1.1.6/src/swiped-events.min.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +29,7 @@
             <section id="title">
 
 
-                <nav class="navbar navbar-expand-lg navbar-dark "id="link">
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-1"id="link">
                     
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,30 +37,62 @@
                 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 
-                        <ul class="navbar-nav ms-auto">
+                        <ul class="navbar-nav mx-auto" id="navigate">
                             <li class="nav-item">
-                                <a class="nav-link" id="link" href="">About</a>
+                                <a class="nav-link active" id="link" href="#">About</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link"id="link" href="#Call for Papers">Call for Papers</a>
-                            </li>
-                            <li class="nav-item">
+                            <li class="nav-item" >
                                 <a class="nav-link" id="link"href="#Guidelines">Guidelines</a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Paper Submission
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="#">Download Template</a></li>
+                                  <li><a class="dropdown-item" href="#">Easy Chair</a></li>
+                                  <li><a class="dropdown-item" href="#">List of Journals</a></li>
+                                </ul>
+                              </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="link"href="#committee">Committee</a>
+                                <a class="nav-link"id="link" href="#">Journal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"id="link" href="#ImpDate">Important dates</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Registration
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="#RegistrationFee">Registration Fee</a></li>
+                                  <li><a class="dropdown-item" href="#">Registration Link</a></li>
+                                </ul>
+                              </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="link"href="#committee" >Committee</a>
+                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link"id="link" href="#location">Contact</a>
                             </li>
                             
                         </ul>
-                        </div>
+                    </div>
                     </nav>
-                    <br>
+                    <br><br><br><br>
                     <div class="row g-0" id="head">
                         
                     <div class="coll"> <h3>INTERNATIONAL CONFERENCE ON EDUCATING THE MILLENNIALS (ICEM)'22</h3></div>
                     <div class="coll">
-                        <img src="https://iucee.github.io/IUCEE/assets/images/hero/ag2-logo.jpg" alt="IUCEE-new-logo-2-e1596354938743-removebg-preview" border="0">
+                        <a href="https://iucee.org/" target="blank__"><img src="https://iucee.github.io/IUCEE/assets/images/hero/ag2-logo.jpg" alt="IUCEE-new-logo-2-e1596354938743-removebg-preview" border="0"></a>
                     </div>
+                    <div class="seclogo"> 
+                       
+                            <a href="https://www.saveetha.ac.in/" target="blank__"><img src="http://admissionsinchennai.in/admissions/wp-content/uploads/2016/03/saveetha-logo.jpg" 
+                            alt="SEC-new-logo" style="border-radius: 100%;width: 100px;height: 100px;"></a>
+                            
+                            <h5>&nbspOrganised by<br>&nbspSaveetha Engineering College</h5>
+                        </div>
                     
                 </div>
 
@@ -78,14 +112,15 @@
         <br> <center> <hr style="width: 80%;background-color: rgb(21, 29, 63); height: 15px;"></center>
         <br><br>
 
-            <section id="Call for Papers">
-                
+            <section id="Call for Papers" id="papers">
+                <br><br>
                 <div class="call">
                 <h2>Call For Papers</h2>
                 <center><hr style="width: 20%; background-color: rgb(21, 29, 63);"></center>
                 <h6>The research papers are invited on the following tracks:</h6>
             </div>
             <br>
+            <div class="tracks">
                 <div class="row g-0">
                     <div class="col" id="track1">
                         <table>
@@ -120,7 +155,7 @@
                     </div>
                     <br>
             
-                <div class="col" id="track2">
+                <div class="col" id="track2" >
                     <table>
                         <tr>
                             <th>TRACK 2</th>
@@ -153,6 +188,7 @@
                     </div>
             
             </div>
+        </div>
             <br><br><br>
 
         <h6 id="call">*The submissions need not be restricted only to the above tracks. They may also be pertaining to teaching-learning methods and outcomes.</h6>
@@ -163,7 +199,7 @@
             <br>
             <center> <hr style="width: 80%;background-color: rgb(21, 29, 63); height: 15px;"></center>
             <br><br>
-            <section id="Guidelines">
+            <section id="Guidelines"><br><br>
                 <div class="row g-0" id="#rules">
                     
 
@@ -184,9 +220,10 @@
             </div>
             <br>
             <center> <hr style="width: 80%;background-color: rgb(21, 29, 63); height: 15px;"></center>
-            <div class="dates"> <center><br><br>
+            <div class="dates" id="ImpDate"><br><br>
                 <h3>Important Dates</h3>
                 <center><hr style="width: 20%; background-color: rgb(21, 29, 63);"></center>
+                <div class="alignCen">
                     <table class="table1">
                         <tr>
                         <td>Abstract Submission Deadline</td>
@@ -213,7 +250,9 @@
             </tr>
         </table>
         <br><br>
-        <h3>Registration Fees</h3>
+        <div id="RegistrationFee">
+            <br><br>
+            <h3>Registration Fees</h3>
         <center><hr style="width: 20%; background-color: rgb(21, 29, 63);"></center>
 
         <table class="table2">
@@ -234,11 +273,13 @@
         </tr>
         </table>
         </div>
+    </div>
+    </div>
         <br><br><br>
         <div class="container">
             <h5>Note:</h5> 
             <p>*Registration fee is to be paid through online transaction which will be available in the conference website. <br>
-                All the accepted papers would be published in the proceedings and selected papers after plagiarism check would be published in the Journal of Engineering Education Transformations (JEET) (Scopus Indexed), for which additional charges would incur.</p>
+            All the accepted papers would be published in the proceedings and selected papers after plagiarism check would be published in the Journal of Engineering Education Transformations (JEET) (Scopus Indexed), for which additional charges would incur.</p>
             </div>
             
             </section>
@@ -251,11 +292,11 @@
                 
                 <div id="guest1">
                         
-                        <div class="guest1img"><img src=" https://www.uml.edu/Images/Vedula-Krishna-1400-opt_tcm18-4805.jpg?w=x" alt="chief-guest" style="border-radius: 100%;width: 185px;height: 195px;">
+                        <div class="guest1img"><img src=" https://www.uml.edu/Images/Vedula-Krishna-1400-opt_tcm18-4805.jpg?w=x" alt="chief-guest" style="border:1px solid white;border-radius: 100%;width: 185px;height: 195px;">
                         </div>
                         <div class="guest1img" style="text-align:center;"><h2>Chief Guest</h2>
                         <br>
-                        <p>Prof. Krishna Vedula<br><i style="font-weight: lighter;">Emeritus, University of Massachusetts Lowell, USA
+                        <p>Prof. Krishna Vedula<br><i style="font-weight: lighter;">Dean Emeritus, University of Massachusetts Lowell, USA
                             Founder & Executive Director,<br> Indo Universal Collaboration for Engineering Education (IUCEE).</i>
                             </p>
                         </div>
@@ -265,17 +306,17 @@
                     <h3>Key Note Speakers</h3>
                     <center> <hr style="width: 20%; color: black;"></center>
 
-                <div class="guest1img"><img src="https://ictiee.org/ictiee2021/wp-content/uploads/2020/12/Archana-Mantri.jpg" alt="guest" style="border-radius: 100%;width: 185px;height: 195px;">
+                <div class="guest1img"><img src="https://ictiee.org/ictiee2021/wp-content/uploads/2020/12/Archana-Mantri.jpg" alt="guest" style="border:1px solid white;border-radius: 100%;width: 185px;height: 195px;">
                 </div>
-                <div class="guest1img"><p>Dr. Archana Mantri<br><i style="font-weight: lighter;">Vice-Chancellor<br>Chitkara University, Punjab.</i></p>
+                <div class="guest1img"><p>Dr. Archana Mantri<br><i style="font-weight: lighter;">Vice-Chancellor<br>Chitkara University, Punjab.</p></i>
                     </div>
                 </div>
                 <center> <hr style="width: 60%; color: black;"></center>
                 <div id="guest1">
-                    <div class="guest1img"> <img src="http://chem.iitm.ac.in/Faculty/prasad/wp-content/uploads/2019/01/DSC_0169-1024x683.jpg" alt="guest2" style="border-radius: 100%;width: 190px;height: 195px;">
+                    <div class="guest1img"> <img src="http://chem.iitm.ac.in/Faculty/prasad/wp-content/uploads/2019/01/DSC_0169-1024x683.jpg" alt="guest2" style="border:1px solid white;border-radius: 100%;width: 190px;height: 195px;">
                     </div>
-                    <div class="guest1img"><p>Dr. Edamana Prasad<br><i style="font-weight: lighter;">
-                        Indian Institute of Technology, Madras.</i></p>
+                    <div class="guest1img"><p>Dr. Edamana Prasad<br><i style="font-weight: lighter;">Professor<br>
+                        Indian Institute of Technology, Madras.</p></i>
                     </div>
                     
                 </div>
@@ -284,21 +325,21 @@
                     <h3>Session Chairs</h3>
                     <center> <hr style="width: 20%; color: black;"></center>
 
-                    <div class="guest1img"><img src="http://ictiee.org/ictiee2020/wp-content/uploads/2020/02/20-Dr.-S.-J.-Thiruvengadam-.png" alt="" style="border-radius: 100%;width: 185px;height: 195px;">
+                    <div class="guest1img"><img src="http://ictiee.org/ictiee2020/wp-content/uploads/2020/02/20-Dr.-S.-J.-Thiruvengadam-.png" alt="" style="border:1px solid white;border-radius: 100%;width: 185px;height: 195px;">
                     </div>
-                    <div class="guest1img"><p>Dr. S. J. Thiruvengadam<br><i style="font-weight: lighter;">(Academic Process)<br>
-                        Thiagarajar College of Engineering, Madurai.</i></p>
+                    <div class="guest1img"><p>Dr. S. J. Thiruvengadam<br><i style="font-weight: lighter;">Dean (Academic Process)<br>
+                        Thiagarajar College of Engineering, Madurai.</p></i>
                         
                     </div>
                 </div>
                 <center> <hr style="width: 60%; color: black;"></center>
 
                 <div id="guest1">
-                    <div class="guest1img"><img src="" alt="" style="border-radius: 100%;width: 185px;height: 195px;">
+                    <div class="guest1img"><img src="http://ictiee.org/ictiee2020/wp-content/uploads/2020/02/16-Saravana-Perumaal-S.jpg" alt="" style="border:1px solid white;border-radius: 100%;width: 185px;height: 195px;">
                     </div>
-                    <div class="guest1img"><p>S. Saravana Perumal<br>
-                        <i style="font-weight: lighter;">Associate Dean (Academics)<br>
-                        Thiagarajar College of Engineering, Madurai.</i></p>
+                    <div class="guest1img"><p>S. Saravana Perumal<br><i style="font-weight: lighter;">
+                        Associate Dean (Academics)<br>
+                        Thiagarajar College of Engineering, Madurai.</p></i>
                     </div>
                 </div>
                 <center> <hr style="width: 80%;background-color: rgb(21, 29, 63); height: 15px;"></center></section>
@@ -309,9 +350,12 @@
             <section id="partners">
                 <center>
                 <h3> PARTNERS</h3>
-                <img class="logo"  src="https://tse3.mm.bing.net/th?id=OIP.UTMCiXdiY9R4fPwh0QqjGQAAAA&pid=Api&P=0&w=293&h=103" alt="">
-                <img class="logo"src="https://logodix.com/logo/1805894.jpg" alt="mathwork">
-                <img class="logo" src="https://tse4.mm.bing.net/th?id=OIP.JfZRdiQFJeVVkanTUQuqigHaHY&pid=Api&P=0&w=155&h=154" alt="ioe" style="width: 10%;">
+                <a href="https://iucee.org/" target="blank__">
+                <img class="logo"  src="https://tse3.mm.bing.net/th?id=OIP.UTMCiXdiY9R4fPwh0QqjGQAAAA&pid=Api&P=0&w=293&h=103" alt=""></a>
+                <a href="https://in.mathworks.com/" target="blank__">
+                <img class="logo"src="https://logodix.com/logo/1805894.jpg" alt="mathwork"></a>
+                <a href="https://www.ieindia.org/webui/iei-home.aspx" target="blank__">
+                <img class="logo" src="https://tse4.mm.bing.net/th?id=OIP.JfZRdiQFJeVVkanTUQuqigHaHY&pid=Api&P=0&w=155&h=154" alt="ioe" style="width: 10%;"></a>
                 <img class="logo" src="https://iitalumnicenter.org/wp-content/uploads/2020/01/PALS.png" alt="" style="width: 10%;">
                 </center>
 
@@ -321,7 +365,7 @@
             <br>
 
             <section id="committee">
-
+                <br><br><br>
                 <h3>CONFERENCE ORGANIZING COMMITTEE</h3><br>
                 <p><strong>Chief Patron:</strong> Dr. N. M. Veeraiyan, Founder President, Saveetha Engineering College <br> 
                 <strong>Patron:</strong> Dr. S. Rajesh, Director, Saveetha Engineering College <br>
@@ -353,14 +397,27 @@
 
 
             <div id="location">
-                <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.1481097899177!2d80.0141526146126!3d13.026238690820009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52605c8001b0b3%3A0x17397b086e047e7c!2sSaveetha%20Engineering%20College!5e0!3m2!1sen!2sin!4v1643173345271!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" align="center"></iframe>
+                <div class="map" class="mapi"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.1481097899177!2d80.0141526146126!3d13.026238690820009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52605c8001b0b3%3A0x17397b086e047e7c!2sSaveetha%20Engineering%20College!5e0!3m2!1sen!2sin!4v1643173345271!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" align="center"></iframe>
                 </div>
                 <div class="map"> <address>
                     <strong> Saveetha Engineering College,</strong><br>
                     Saveetha Nagar, Sriperumbadur Taluk, <br> Kanchipuram - Chennai Rd, <br> Chennai, Tamil Nadu 602105.
                 </address>
+                <div class="icon">
+                    <a href="https://www.saveetha.ac.in/" target="blank__"><img src="http://admissionsinchennai.in/admissions/wp-content/uploads/2016/03/saveetha-logo.jpg" 
+                        alt="SEC-new-logo" style="border-radius: 100%;width: 38px;height: 38px;"></a>
+                        
+                    <a href="https://www.instagram.com/saveethaengineeringcollege/" target="blank__"><i class="bi bi-instagram"></i></a>
+                    <a href="https://twitter.com/SaveethaSEC" target="blank__"><i class="bi bi-twitter"></i></a>  
+                    <a href="https://www.facebook.com/pg/SaveethaEngineeringCollegeSEC/posts/?ref=page_internal" target="blank__"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCh4mBhkgfgn2amL5EV-efwg" target="blank__"><i class="bi bi-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/saveetha-engineering-college/" target="blank__"><i class="bi bi-linkedin"></i></a>
+
+                </div>
+                <a href="#location" class="phone"><i class="bi bi-telephone"></i>&nbsp+914466726677/+914466726690</a>
                     
                 </div>
+                
                 
             </div>
             <p><strong>Copyright © SEC 2022</strong></p>
@@ -368,10 +425,17 @@
 </div>
 <script>
     $(window).on('load',function(){
-        $("#preloader").fadeOut(1500);
-        $("#load-hide").fadeIn(1000);
-    })          
-     
+        $("#preloader").fadeOut(700);
+        $("#load-hide").fadeIn(500);
+    });        
+    var btns = $("#title .navbar-nav .nav-link")
+for(var i=0;i<btns.length;i++){
+    btns[i].addEventListener('click',function(){
+        var current=document.getElementsByClassName("active");
+        current[0].className=current[0].className.replace(" active","");
+        this.className+= " active";
+    });
+}
   </script>
 </body>
 </html>
