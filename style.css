@@ -130,7 +130,7 @@ font-weight: bold
 #About{
   margin: 0 10%;
 }
-#About h2,h4{
+#About h4{
   text-align: center;
   font-weight: bold;
   font-family: 'Marcellus SC', serif;
@@ -210,6 +210,7 @@ font-style: italic;
     padding: 10px;
     
   }
+  
 
 @keyframes floating {
     0% { transform: translate(0,  0px); }
