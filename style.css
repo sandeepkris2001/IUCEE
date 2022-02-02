@@ -539,6 +539,11 @@ footer p{
   width: 100;
   height: 100;
 }
+@media screen and (min-width: 411px) and (max-width: 430px){
+  .archana{
+padding-right: 5%;
+    }
+}
 
 @media screen and (max-width: 576px) {
   .cen{
