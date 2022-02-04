@@ -17,7 +17,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,500&family=Josefin+Sans:wght@700&family=Marcellus+SC&family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
 </head>
 <body style="  background-color: #e7e9f0;color: black;">
-   
     <div id="preloader">
         <ul>
         <li></li>
@@ -26,6 +25,9 @@
         <li></li>
         </ul>
     </div>  
+    <button type="button" class="btn btn-floating" id="btn-back-to-top">
+        <i class="bi bi-arrow-up"></i>
+      </button>
     <div id="load-hide">
                 <section id="title">
 
@@ -324,6 +326,7 @@
                         <center><hr style="width: 10%; background-color: rgb(21, 29, 63);"></center><br>
                         <p>ICEM 22 publish research articles in prominent journals (SCOPUS INDEXED)</p>
                         <ul>
+                            <p style="color: red;">*Will be updated soon.</p>
                             <!--<li>
                                 
                             </li>-->
@@ -427,8 +430,8 @@
             </div>
                 <br><br><br>
                 <div class="container">
-                    <h5>Note:</h5> 
-                    <p><b style="color: red;">*Registration fee is to be paid through online transaction which will be available in the conference website.</b> <br><br>We charge nominal Processing Fee for conference proceedings along with the certificates for up to three authors only after the acceptance of article. There is no article submission fee included. Addition of each author will cost INR 500 which can be extended up to five authors maximum for a paper. Corresponding authors will be informed about the appropriate details through acceptance mail.<br><br>
+                    <h4 style="font-family: 'Marcellus SC', serif; font-weight: bold;">Note:</h4> 
+                    <p>We charge nominal Processing Fee for conference proceedings along with the certificates for up to three authors only after the acceptance of article. There is no article submission fee included. Addition of each author will cost INR 500 which can be extended up to five authors maximum for a paper. Corresponding authors will be informed about the appropriate details through acceptance mail.<br><br>
                         All the accepted papers would be published in the proceedings and selected papers after plagiarism check would be published in the reputed Scopus Indexed Journals, for which additional charges would incur. <br><br>College will provide accomodation on payment basis. If required, for details, contact the coordinator.<br><br>For payment details <a href="payment.html" target="blank__" class="btn btn-primary btn-sm"><b style="font-size: large;">Click here</b></a></p>
                     </div>
                     
@@ -553,5 +556,29 @@ for(var i=0;i<btns.length;i++){
     });
 }
   </script>
+  <script>//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+mybutton.addEventListener("click", function(){
+    window.scrollTo({
+        top:0,
+        left:0,
+        behaviour:"smooth"
+    });
+});
+</script>
 </body>
 </html>
